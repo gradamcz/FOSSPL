@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="dcterms.created" content="Wed, 07 Oct 2026 16:30:37 GMT">
+    <meta name="description" content="FOSSPL Work schedule by George A">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOSSPL Week Schedule</title>
+  </head>
+  <body>
+  <div style="text-align: left; font-family: sans-serif; margin-bottom: 15px;">
+    <H3>FOSSPL Bookstore Current Date: <span id="current-date"></span></H3>
+</div>
+
+
+<iframe 
+  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzbb8PY1pk_ABtLE1WOopTjr548SnFoQ6VSQNybmWOvoRQ_Ntvn7yyApKYCNMfztQ0uAxaLB5fJ0G7/pubhtml?gid=584693360&rm=minimal&headers=false&widget=false&chrome=false" 
+  width="100%" 
+  height="350" 
+  frameborder="0" 
+  style="border: none; overflow: hidden;"
+  scrolling="no">
+</iframe>
+<script>
+    document.getElementById('current-date').innerText = new Date().toLocaleDateString('en-US', {
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric'
+    });
+</script>
+  </body>
+</html>
