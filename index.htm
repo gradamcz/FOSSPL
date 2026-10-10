@@ -9,6 +9,12 @@
     <title>FOSSPL Week Schedule</title>
 	<style>
 	@media print {
+/* Force the browser to print background colors and shading */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
   /* Hide the page header so the schedule gets the whole page */
   div, h3 {
     display: none !important;
@@ -31,7 +37,7 @@
     
     /* Shrinks the 1000px wide sheet down to ~65% so it fits on a mobile print page. 
        Adjust this number (e.g., 0.6 or 0.7) if it is still slightly cut off. */
-    transform: scale(0.65) !important; 
+    transform: scale(0.75) !important; 
     transform-origin: top left !important;
     
     border: none !important;
