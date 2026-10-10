@@ -7,12 +7,42 @@
     <meta name="description" content="FOSSPL Work schedule by George A">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FOSSPL Week Schedule</title>
+	<style>
+	@media print {
+  /* Hide the page header so the schedule gets the whole page */
+  div, h3 {
+    display: none !important;
+  }
+
+  /* Force the iframe to expand to its full size, then shrink it like a photo */
+  iframe {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    /* Forces the iframe to be wide enough to show all columns */
+    width: 1000px !important; 
+    max-width: none !important;
+    
+    /* Forces the iframe to be tall enough to show all rows */
+    height: 1200px !important; 
+    max-height: none !important;
+    
+    /* Shrinks the 1000px wide sheet down to ~65% so it fits on a mobile print page. 
+       Adjust this number (e.g., 0.6 or 0.7) if it is still slightly cut off. */
+    transform: scale(0.65) !important; 
+    transform-origin: top left !important;
+    
+    border: none !important;
+  }
+}
+	</style>
   </head>
   <body>
   <div style="text-align: left; font-family: sans-serif; margin-bottom: 15px;">
     <H3>FOSSPL Bookstore Current Date: <span id="current-date"></span></H3>
 </div>
-
 
 <iframe 
   src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQzbb8PY1pk_ABtLE1WOopTjr548SnFoQ6VSQNybmWOvoRQ_Ntvn7yyApKYCNMfztQ0uAxaLB5fJ0G7/pubhtml?gid=584693360&rm=minimal&headers=false&widget=false&chrome=false&gridlines=false" 
